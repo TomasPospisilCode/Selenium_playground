@@ -1,0 +1,9 @@
+from selenium import webdriver
+from POM import Login
+
+driver = webdriver.Firefox()
+driver.get("http://www.newtours.demoaut.com/")
+login = Login(driver)
+login.UserName("mercury")
+login.Password("mercury")
+login.SignIn()
